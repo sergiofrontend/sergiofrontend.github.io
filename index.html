@@ -1,25 +1,109 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>original</title>
+	<title>Sergio Antonio | Front-End</title>
 	<style>
-		.easyhtml5video {
-			margin: 0 auto;
+		body{
+			background-color: #ebebeb;
 		}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 	</style>
 </head>
 <body>
-<!-- Start EasyHtml5Video.com BODY section -->
-<style type="text/css">.easyhtml5video .eh5v_script{display:none}</style>
-<div class="easyhtml5video" style="position:relative;max-width:1588px;"><video  autoplay="autoplay" poster="eh5v.files/html5video/original.jpg" style="width:100%" title="original">
-<source src="eh5v.files/html5video/original.m4v" type="video/mp4" />
-<source src="eh5v.files/html5video/original.webm" type="video/webm" />
-<source src="eh5v.files/html5video/original.mp4" />
-</video><div class="eh5v_script"><a href="http://easyhtml5video.com">mobile html5 video</a> by EasyHtml5Video.com v3.5</div></div>
-<script src="eh5v.files/html5video/html5ext.js" type="text/javascript"></script>
-<!-- End EasyHtml5Video.com BODY section -->
 
+<video  autoplay="autoplay" poster="" style="width:100%" title="original">
+<source src="original.m4v" type="video/mp4" />
+<source src="original.webm" type="video/webm" />
+</video>
+
+<a href="eh5v.html">entrar</a>
+
+<!--<div class="fullscreen-bg">
+	<video  muted autoplay poster="underconstruction.jpg" class="fullscreen-bg__video">
+		<source src="underconstruction1.mp4" type="video/mp4">
+		<source src="underconstruction.webm" type="video/webm">
+		<source src="underconstruction.ogg" type="“application/ogg">
+
+	</video>
+</div>
+
+<div id="player"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		var width = $(window).width();
+		var height = $(window).height();
+		console.log(width);
+		console.log(height);
+		// Load API asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var player;
+		function onYouTubeIframeAPIReady() {
+		    player = new YT.Player('player', {
+		        height: height,
+		        width: width,
+		        playerVars: { 
+		        	'autoplay': 1, 
+		        	'controls': 0,
+		        	'rel' : 0
+		        },
+		        videoId: 'aR4r_4Dbrk8',
+		        events: {
+		        	'onReady': onPlayerReady,
+		        	'onStateChange': onPlayerStateChange
+		        }
+		    }); // create the <iframe> (and YouTube player)
+		}
+
+		function onPlayerReady(event) {
+        	event.target.playVideo();
+      	}
+
+		function onPlayerStateChange(event) {    
+		    if(event.data === 0) {          
+		        hideVideo();
+		    }
+		}
+
+		function hideVideo() {
+		    var img_url = 'underconstruction.jpg';
+		    /*$('#player').replaceWith('<img src="'+img_url+'">');*/
+		}
+
+
+		/* $(document).ready(function(){
+    $('video').on('ended',function(){
+      console.log('Video has ended!');
+    });
+  });
+		var videoLock = false;
+
+		$('video').on("timeupdate", function() {
+
+		if ($('video')[0].currentTime >= 7 && videoLock == false) {
+		videoLock = true;
+		$('body').append('<h1>Added After 7 Seconds Playing Video</h1>');
+		}
+
+		})*/
+	</script>-->
 </body>
 </html>
