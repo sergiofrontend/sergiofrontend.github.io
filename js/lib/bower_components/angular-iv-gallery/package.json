@@ -1,0 +1,35 @@
+{
+  "name": "angular-iv-gallery",
+  "version": "1.0.0",
+  "description": "A angular gallery directive for image and video",
+  "author": "codonist <zpy888134348@gmail.com>",
+  "repository": "https://github.com/codonist/angular-gallery",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "gulp": "^3.8.8",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-karma": "0.0.4",
+    "gulp-phantom": "0.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "~0.12",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "phantomjs": "^1.9.17"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run",
+    "preupdate-webdriver": "npm install"
+  }
+}

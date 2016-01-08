@@ -1,0 +1,19 @@
+        <div class="container">
+            <div class="row">
+                <div class="base _hard col-xs-12 col-sm-6 text-center">
+                    <h1 class="col-xs-12"><i class="fa fa-battery-full"></i>{{titleHard}}</h1>
+                    <ul >
+                        <li ng-repeat="skill in skillshard">{{skill.name}}</li>
+                    </ul>
+                </div>
+                <div class="base _soft col-xs-12 col-sm-6 text-center right" >
+                    <h1 class="col-xs-12"><i class="fa fa-battery-half"></i>{{titleSoft}}</h1>
+                    <ul>
+                       <li ng-repeat="skills in skillssoft">{{skills.name}}</li>
+                   </ul>   
+                </div>
+                <figure class="col-xs-12 col-sm-6 hidden-xs">
+                    <img ng-src="{{src}}" alt="{{title}}">
+                </figure>
+            </div>
+        </div>

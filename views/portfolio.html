@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <h1 class="title">PORTFOLIO</h1>
+        <div 
+            id="p_box" 
+            class="p_box col-xs-12 col-sm-10 col-sm-offset-0" 
+            ng-repeat="work in works"
+            ng-class="{active : sizeBox === work}" 
+            myPostRepeatDirective
+            >
+            <div class="p_img" ng-class="{click : activeBox === work}">
+                <figure ng-style="{'background-image': work.foto}"></figure>
+                <a href="#ferdimar" class="btn-close text-center hidden-xs" ng-click="closeBox()"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="p_desc xol-xs-12 col-sm-12" ng-class="{click : activeBox === work, active : sizeBox === work}">
+                <div class="desc-base" >
+                    <h1 class="col-xs-12">{{work.title}}</h1>
+                    <h3 class="col-xs-12 text-center">{{work.descricao}}</h3>
+                    <a href="#{{work.link}}" class="btn-open col-sm-12 text-center hidden-xs" ng-click="openBox(work)">read more</a>
+                </div>
+                <div class=" desc-click col-xs-12"><!-- ng-include="work.readmore">-->
+                    <h1 class="col-xs-12">{{work.title}}</h1>
+                    <h4 class="text-center">{{work.readmore}}</h4>
+                    <div class="col-xs-12">
+                        <ul  class="col-xs-12" >
+                          <li ng-repeat="image in work.images" class="col-xs-12 col-sm-4 col-md-3">
+                            <a ng-click="openLightboxModal(work, $index)">
+                              <img ng-src="{{image.thumbUrl}}" class="img-thumbnail" style="cursor: pointer;">
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
