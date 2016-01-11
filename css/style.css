@@ -350,24 +350,23 @@ section#about figure {
 }
 /* line 213, ../sass/modules/_sections.scss */
 section#about figure img {
-  width: 372px;
-  height: 898px;
+  height: 100%;
 }
 @media (min-width: 768px) {
   /* line 179, ../sass/modules/_sections.scss */
   section#about {
     height: 41.25em;
   }
-  /* line 220, ../sass/modules/_sections.scss */
+  /* line 219, ../sass/modules/_sections.scss */
   section#about .base {
     height: 35em;
     padding-top: 1.5em;
   }
-  /* line 223, ../sass/modules/_sections.scss */
+  /* line 222, ../sass/modules/_sections.scss */
   section#about .base h1 {
     text-align: left!important;
   }
-  /* line 226, ../sass/modules/_sections.scss */
+  /* line 225, ../sass/modules/_sections.scss */
   section#about .base .dados {
     margin-top: 2em;
     display: flex;
@@ -375,20 +374,20 @@ section#about figure img {
     position: absolute;
     height: 100%;
   }
-  /* line 234, ../sass/modules/_sections.scss */
+  /* line 233, ../sass/modules/_sections.scss */
   section#about figure {
     height: 35em;
     margin-bottom: 0;
     padding-top: 1.5em;
   }
-  /* line 238, ../sass/modules/_sections.scss */
+  /* line 237, ../sass/modules/_sections.scss */
   section#about figure img {
     max-width: 100%;
     max-height: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 246, ../sass/modules/_sections.scss */
+  /* line 245, ../sass/modules/_sections.scss */
   section#about figure img {
     max-height: auto;
   }
@@ -397,7 +396,7 @@ section#about figure img {
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 256, ../sass/modules/_sections.scss */
+/* line 255, ../sass/modules/_sections.scss */
 section#school {
   background-color: #cbc373;
   margin-top: -50px;
@@ -409,36 +408,36 @@ section#school {
   width: 110%;
   margin-left: -5%;
 }
-/* line 267, ../sass/modules/_sections.scss */
+/* line 266, ../sass/modules/_sections.scss */
 section#school .school span {
   font-size: 1.14em;
   font-weight: 500;
 }
-/* line 270, ../sass/modules/_sections.scss */
+/* line 269, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(1) {
   font-size: 2em;
 }
-/* line 273, ../sass/modules/_sections.scss */
+/* line 272, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(2) {
   font-size: 2.5em;
   font-weight: bold;
   color: #142914;
 }
-/* line 278, ../sass/modules/_sections.scss */
+/* line 277, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(3) {
   font-size: 1.33em;
   line-height: 2em;
 }
-/* line 282, ../sass/modules/_sections.scss */
+/* line 281, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(4) {
   line-height: 2em;
 }
-/* line 284, ../sass/modules/_sections.scss */
+/* line 283, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(4) .__v1 {
   font-size: 1em;
   font-weight: normal;
 }
-/* line 290, ../sass/modules/_sections.scss */
+/* line 289, ../sass/modules/_sections.scss */
 section#school .school span:nth-child(5) .__v1 {
   font-size: 2em;
   font-weight: bold;
@@ -446,7 +445,7 @@ section#school .school span:nth-child(5) .__v1 {
   color: #142914;
 }
 @media (min-width: 768px) {
-  /* line 256, ../sass/modules/_sections.scss */
+  /* line 255, ../sass/modules/_sections.scss */
   section#school {
     font-size: 1em;
   }
@@ -455,68 +454,80 @@ section#school .school span:nth-child(5) .__v1 {
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 309, ../sass/modules/_sections.scss */
+/* line 308, ../sass/modules/_sections.scss */
 section#skills .base {
   margin-bottom: 50px;
 }
-/* line 311, ../sass/modules/_sections.scss */
+/* line 310, ../sass/modules/_sections.scss */
 section#skills .base h1 {
   color: #cbc373;
 }
-/* line 313, ../sass/modules/_sections.scss */
+/* line 312, ../sass/modules/_sections.scss */
 section#skills .base h1 i {
   margin-left: -1em;
   margin-right: 0.5em;
   font-size: .8em;
 }
-/* line 319, ../sass/modules/_sections.scss */
+/* line 318, ../sass/modules/_sections.scss */
 section#skills .base ul {
   list-style: none;
   padding: 0;
 }
-/* line 322, ../sass/modules/_sections.scss */
+/* line 321, ../sass/modules/_sections.scss */
 section#skills .base ul li {
   margin-bottom: 0.625em;
 }
+/* line 326, ../sass/modules/_sections.scss */
+section#skills figure {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-35%);
+  -moz-transform: translateX(-35%);
+  -ms-transform: translateX(-35%);
+  -o-transform: translateX(-35%);
+  transform: translateX(-35%);
+}
 /* line 328, ../sass/modules/_sections.scss */
 section#skills figure img {
-  width: 372px;
-  height: 898px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 400px;
 }
 @media (min-width: 768px) {
-  /* line 335, ../sass/modules/_sections.scss */
+  /* line 337, ../sass/modules/_sections.scss */
   section#skills .base h1 {
     text-align: left;
     position: relative;
   }
-  /* line 339, ../sass/modules/_sections.scss */
+  /* line 341, ../sass/modules/_sections.scss */
   section#skills .base ul {
     text-align: left;
   }
-  /* line 343, ../sass/modules/_sections.scss */
+  /* line 345, ../sass/modules/_sections.scss */
   section#skills .base._hard h1 {
     position: absolute;
     top: 1.5em;
     left: -4.5em;
     transform: rotate(-90deg);
   }
-  /* line 349, ../sass/modules/_sections.scss */
+  /* line 351, ../sass/modules/_sections.scss */
   section#skills .base._hard ul {
     padding-left: 40px;
   }
-  /* line 354, ../sass/modules/_sections.scss */
+  /* line 356, ../sass/modules/_sections.scss */
   section#skills .base._soft h1 {
     position: absolute;
     top: 1.5em;
     left: 4.5em;
     transform: rotate(-90deg);
   }
-  /* line 360, ../sass/modules/_sections.scss */
+  /* line 362, ../sass/modules/_sections.scss */
   section#skills .base._soft ul {
     text-align: right;
     padding-right: 40px;
   }
-  /* line 366, ../sass/modules/_sections.scss */
+  /* line 368, ../sass/modules/_sections.scss */
   section#skills figure {
     position: relative;
     left: 50%;
@@ -528,38 +539,31 @@ section#skills figure img {
     position: absolute;
     bottom: 0;
   }
-  /* line 370, ../sass/modules/_sections.scss */
-  section#skills figure img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
 }
 @media (min-width: 992px) {
-  /* line 381, ../sass/modules/_sections.scss */
+  /* line 380, ../sass/modules/_sections.scss */
   section#skills .base._hard h1 {
     top: 0em;
     left: -6em;
   }
-  /* line 387, ../sass/modules/_sections.scss */
+  /* line 386, ../sass/modules/_sections.scss */
   section#skills .base._soft h1 {
     text-align: left;
     top: 0em;
     left: 6em;
   }
-  /* line 392, ../sass/modules/_sections.scss */
+  /* line 391, ../sass/modules/_sections.scss */
   section#skills .base._soft ul {
     padding-right: 2.1em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 401, ../sass/modules/_sections.scss */
+  /* line 400, ../sass/modules/_sections.scss */
   section#skills .base._hard h1 {
     top: -1.3em;
     left: -7.5em;
   }
-  /* line 407, ../sass/modules/_sections.scss */
+  /* line 406, ../sass/modules/_sections.scss */
   section#skills .base._soft h1 {
     top: -1.5em;
     left: 7.5em;
@@ -569,22 +573,30 @@ section#skills figure img {
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 420, ../sass/modules/_sections.scss */
+/* line 419, ../sass/modules/_sections.scss */
 section#frase {
+  /*background-image: url(../img/frase.jpg);
+  
+  background-position: center;*/
   background-color: #cbc373;
   position: relative;
-  height: 231px;
   z-index: 16;
   box-shadow: inset 0 0 20px#000;
   width: 110%;
   margin-left: -5%;
   margin-top: -1px;
+  padding-bottom: 50px;
+}
+/* line 431, ../sass/modules/_sections.scss */
+section#frase blockquote {
+  border: none;
+  text-align: center;
 }
 
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 435, ../sass/modules/_sections.scss */
+/* line 441, ../sass/modules/_sections.scss */
 section#portfolio {
   background-color: #142914;
   /*box-shadow: 0px 1px 10px black;*/
@@ -592,12 +604,12 @@ section#portfolio {
   z-index: 15;
   padding-bottom: 4em;
 }
-/* line 441, ../sass/modules/_sections.scss */
+/* line 447, ../sass/modules/_sections.scss */
 section#portfolio h1.title {
   color: #cbc373;
   margin-bottom: 1.3em;
 }
-/* line 445, ../sass/modules/_sections.scss */
+/* line 451, ../sass/modules/_sections.scss */
 section#portfolio .p_box {
   min-height: 9.375em;
   margin-bottom: 2em;
@@ -614,7 +626,7 @@ section#portfolio .p_box {
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
-/* line 450, ../sass/modules/_sections.scss */
+/* line 456, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_img {
   height: 6.25em;
   width: 6.25em;
@@ -634,11 +646,11 @@ section#portfolio .p_box .p_img {
   -o-transition: all 1.5s ease 0s;
   transition: all 1.5s ease 0s;
 }
-/* line 463, ../sass/modules/_sections.scss */
+/* line 469, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_img:hover figure {
   background-size: 120%;
 }
-/* line 466, ../sass/modules/_sections.scss */
+/* line 472, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_img figure {
   width: 100%;
   height: 100%;
@@ -655,7 +667,7 @@ section#portfolio .p_box .p_img figure {
   transition: all 0.5s ease-in-out 0s;
   margin: 0 auto;
 }
-/* line 480, ../sass/modules/_sections.scss */
+/* line 486, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc {
   position: relative;
   left: 50%;
@@ -677,7 +689,7 @@ section#portfolio .p_box .p_desc {
   transition: all 1s ease 0s;
   box-shadow: 0px 0px 7px black;
 }
-/* line 491, ../sass/modules/_sections.scss */
+/* line 497, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc h1 {
   background-color: #142914;
   color: transparent;
@@ -688,11 +700,11 @@ section#portfolio .p_box .p_desc h1 {
   border-bottom: 1px solid #9e965b;
   border-bottom: 1px solid #9e965b;
 }
-/* line 502, ../sass/modules/_sections.scss */
+/* line 508, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc h3 {
   margin-top: 0px;
 }
-/* line 508, ../sass/modules/_sections.scss */
+/* line 514, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-base {
   padding: 4%;
   -webkit-transition: all 0.5s ease-in-out 0s;
@@ -702,7 +714,7 @@ section#portfolio .p_box .p_desc .desc-base {
   transition: all 0.5s ease-in-out 0s;
   z-index: 4;
 }
-/* line 513, ../sass/modules/_sections.scss */
+/* line 519, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click {
   padding-top: 4%;
   -webkit-transition: all 0.5s ease-in-out 0s;
@@ -712,25 +724,25 @@ section#portfolio .p_box .p_desc .desc-click {
   transition: all 0.5s ease-in-out 0s;
   z-index: 5;
 }
-/* line 517, ../sass/modules/_sections.scss */
+/* line 523, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click h1 {
   display: none;
 }
-/* line 520, ../sass/modules/_sections.scss */
+/* line 526, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click ul {
   list-style: none;
   margin-top: 1em;
 }
-/* line 523, ../sass/modules/_sections.scss */
+/* line 529, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click ul li {
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  /* line 531, ../sass/modules/_sections.scss */
+  /* line 537, ../sass/modules/_sections.scss */
   section#portfolio h1.title {
     font-size: 4em;
   }
-  /* line 534, ../sass/modules/_sections.scss */
+  /* line 540, ../sass/modules/_sections.scss */
   section#portfolio .p_box {
     /*width: 34.375em;*/
     max-height: 9.375em;
@@ -749,11 +761,11 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
   }
-  /* line 541, ../sass/modules/_sections.scss */
+  /* line 547, ../sass/modules/_sections.scss */
   section#portfolio .p_box.active {
     max-height: 40em;
   }
-  /* line 544, ../sass/modules/_sections.scss */
+  /* line 550, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img {
     height: 9.375em;
     width: 9.375em;
@@ -771,7 +783,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
   }
-  /* line 556, ../sass/modules/_sections.scss */
+  /* line 562, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img.click {
     left: calc(100% / 2);
     margin-left: -3.125em;
@@ -779,11 +791,11 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     height: 6.25em;
     margin-top: -1em;
   }
-  /* line 562, ../sass/modules/_sections.scss */
+  /* line 568, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img.click a {
     top: 0;
   }
-  /* line 567, ../sass/modules/_sections.scss */
+  /* line 573, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img figure {
     width: 100%;
     height: 100%;
@@ -796,7 +808,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
   }
-  /* line 576, ../sass/modules/_sections.scss */
+  /* line 582, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img a {
     display: block;
     position: absolute;
@@ -811,22 +823,22 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     transition: all 0.5s ease-in-out 0s;
     top: 10em;
   }
-  /* line 585, ../sass/modules/_sections.scss */
+  /* line 591, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img a i {
     line-height: 90px;
     font-size: 2em;
     color: #142914;
     opacity: .7;
   }
-  /* line 591, ../sass/modules/_sections.scss */
+  /* line 597, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img a:hover {
     background-color: rgba(203, 195, 115, 0.8);
   }
-  /* line 594, ../sass/modules/_sections.scss */
+  /* line 600, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img a:hover i {
     opacity: 1;
   }
-  /* line 599, ../sass/modules/_sections.scss */
+  /* line 605, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc {
     /*width: 400px;*/
     position: relative;
@@ -852,26 +864,26 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
   }
-  /* line 613, ../sass/modules/_sections.scss */
+  /* line 619, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.active {
     max-height: 40em;
   }
-  /* line 616, ../sass/modules/_sections.scss */
+  /* line 622, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc h1 {
     border-bottom: 1px solid #9e965b;
   }
-  /* line 619, ../sass/modules/_sections.scss */
+  /* line 625, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc h3 {
     margin-top: 0px;
   }
-  /* line 622, ../sass/modules/_sections.scss */
+  /* line 628, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc a {
     text-decoration: none;
     color: #142914;
     font-size: 1.5em;
     font-weight: bold;
   }
-  /* line 628, ../sass/modules/_sections.scss */
+  /* line 634, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-base {
     position: absolute;
     top: 0;
@@ -886,7 +898,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     transition: all 0.5s ease-in-out 0.1s;
     z-index: 4;
   }
-  /* line 638, ../sass/modules/_sections.scss */
+  /* line 644, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-click {
     position: relative;
     margin-top: 4.375em;
@@ -899,14 +911,14 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     transition: all 0.5s ease-in-out 0s;
     z-index: 5;
   }
-  /* line 647, ../sass/modules/_sections.scss */
+  /* line 653, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-click h1,
   section#portfolio .p_box .p_desc .desc-click h4,
   section#portfolio .p_box .p_desc .desc-click div {
     display: block;
     margin-bottom: 1em;
   }
-  /* line 652, ../sass/modules/_sections.scss */
+  /* line 658, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.click .desc-base {
     opacity: 0;
     left: 50%;
@@ -916,7 +928,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
   }
-  /* line 658, ../sass/modules/_sections.scss */
+  /* line 664, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.click .desc-click {
     opacity: 1;
     margin-top: 0;
@@ -931,7 +943,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 673, ../sass/modules/_sections.scss */
+/* line 679, ../sass/modules/_sections.scss */
 section#contactos {
   background-color: #cbc373;
   color: #142914;
@@ -940,7 +952,7 @@ section#contactos {
   padding-bottom: 4em;
   z-index: 16;
 }
-/* line 680, ../sass/modules/_sections.scss */
+/* line 686, ../sass/modules/_sections.scss */
 section#contactos .map-contacts {
   width: 110%;
   height: 18.75em;
@@ -951,7 +963,7 @@ section#contactos .map-contacts {
   margin-left: -5%;
   margin-top: -1px;
 }
-/* line 690, ../sass/modules/_sections.scss */
+/* line 696, ../sass/modules/_sections.scss */
 section#contactos .icon-contact {
   width: 6em;
   height: 6em;
@@ -963,7 +975,7 @@ section#contactos .icon-contact {
   background-color: #142914;
   box-shadow: 0px 0px 5px #000;
 }
-/* line 700, ../sass/modules/_sections.scss */
+/* line 706, ../sass/modules/_sections.scss */
 section#contactos .icon-contact .__icon {
   display: flex;
   justify-content: center;
@@ -972,16 +984,16 @@ section#contactos .icon-contact .__icon {
   font-size: 2em;
   color: #cbc373;
 }
-/* line 709, ../sass/modules/_sections.scss */
+/* line 715, ../sass/modules/_sections.scss */
 section#contactos .box-contacts {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* line 712, ../sass/modules/_sections.scss */
+/* line 718, ../sass/modules/_sections.scss */
 section#contactos .box-contacts h1 {
   padding-bottom: 1em;
 }
-/* line 715, ../sass/modules/_sections.scss */
+/* line 721, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .line {
   width: 80%;
   height: 1px;
@@ -990,15 +1002,15 @@ section#contactos .box-contacts .line {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 723, ../sass/modules/_sections.scss */
+/* line 729, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts {
   padding-top: 1em;
 }
-/* line 725, ../sass/modules/_sections.scss */
+/* line 731, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 {
   line-height: 50px;
 }
-/* line 727, ../sass/modules/_sections.scss */
+/* line 733, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 i {
   display: flex;
   justify-content: center;
@@ -1011,16 +1023,16 @@ section#contactos .box-contacts .group-contacts h4 i {
   background-color: #142914;
   float: left;
 }
-/* line 739, ../sass/modules/_sections.scss */
+/* line 745, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 a {
   color: #142914;
 }
-/* line 741, ../sass/modules/_sections.scss */
+/* line 747, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 a:hover {
   color: #10160f;
 }
 @media (min-width: 768px) {
-  /* line 749, ../sass/modules/_sections.scss */
+  /* line 755, ../sass/modules/_sections.scss */
   section#contactos .group-contacts {
     width: 21em;
     position: relative;
