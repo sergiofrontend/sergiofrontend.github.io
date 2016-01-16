@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="js/bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.min.css">
-        <link href="css/lib/animate.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/lib/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/aboutCtrl.js"></script>
+    <script src="js/controller/skillCtrl.js"></script>
+    <script src="js/controller/portfolioCtrl.js"></script>
+    <script src="js/controller/contactCtrl.js"></script>
+    <script src="js/directive/myPostRepeatDirective.js"></script>
+    <script src="js/services/worksAPIService.js"></script>
+    <script src="js/value/configValue.js"></script>
 
 </head>
 <body ng-app="sergioPortfolioApp">
     <div id="menu-mobile-all">
-    	<div class="hamburger">
-        	<div id="icon-mobile" >
-    			<span></span>
-    			<span></span>
-    			<span></span>
-    		</div>
+        <div class="hamburger">
+            <div id="icon-mobile" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <header id="myNavbar-mobile" class="navbar">
             <nav>
-    	        <a class="active" href="#home"><span>Home</span></a>
+                <a class="active" href="#home"><span>Home</span></a>
                 <a class="" href="#about"><span>About</span></a>
                 <a class="" href="#skills"><span>Skills</span></a>
                 <a class="" href="#portfolio"><span>Portfolio</span></a>
@@ -119,10 +130,10 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" ng-include="'views/portfolio.html'" ng-controller="portfoilioCtrl">
+    <section id="portfolio" ng-include="'views/portfolio.html'" ng-controller="portfolioCtrl">
 <!-- PORTFOLIO -->
     </section>
-    <section id="contactos" ng-include="'views/contact.html'">
+    <section id="contactos" ng-include="'views/contact.html'" ng-controller="contactCtrl">
 <!-- contacts -->       
     </section>
     <footer>
@@ -140,17 +151,18 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-    <script src="js/lib/ui-bootstrap.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-        <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
-    
-    <script type="text/javascript" src="js/lib/isinviewport/isInViewport.min.js"></script>    
-    <script src="js/lib/wow/wow.min.js"></script>
+
+
+    <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.js"></script>
+    <script src="lib/wow/dist/wow.min.js"></script>
+    <script src="lib/isinviewport/isInViewport.min.js"></script>    
     <script src="js/script.js"></script>
-    <script src="js/angular.js"></script>
+
+
+
     <script>
 
     </script>

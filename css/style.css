@@ -17,6 +17,80 @@ html, body {
 }
 
 /* Modules - Individual site components */
+/*.p_box.ng-enter, 
+.p_box.ng-leave,
+.p_box.ng-move { 
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+} 
+.p_box.ng-enter-stagger,
+.p_box.ng-leave-stagger,
+.p_box.ng-move-stagger {
+    transition-delay: 0.2s;  
+}
+
+.p_box.ng-leave.p_box.ng-leave-active,
+.p_box.ng-enter,
+.p_box.ng-move.ng-move-active,
+.p_box.ng-move {
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    height: 0px;
+    opacity: 0;
+}
+ 
+.p_box.ng-enter.p_box.ng-enter-active,
+.p_box.ng-leave {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    height: 30px;
+    opacity: 1;
+}*/
+/* line 41, ../sass/modules/_ngAnimate.scss */
+.p_box {
+  opacity: 1;
+  transition: 1s linear all;
+}
+
+/* line 47, ../sass/modules/_ngAnimate.scss */
+.p_box.ng-enter-stagger,
+.p_box.ng-leave-stagger,
+.p_box.ng-move-stagger {
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+}
+
+/* line 52, ../sass/modules/_ngAnimate.scss */
+.p_box.ng-enter, .p_box.ng-move {
+  opacity: 0;
+}
+
+/* line 55, ../sass/modules/_ngAnimate.scss */
+.p_box.ng-enter.p_box.ng-enter-active, .p_box.ng-move.p_box.ng-move-active {
+  opacity: 1;
+}
+
+/* line 58, ../sass/modules/_ngAnimate.scss */
+.p_box.ng-leave {
+  opacity: 1;
+}
+
+/* line 61, ../sass/modules/_ngAnimate.scss */
+.p_box.ng-leave.p_box.ng-leave-active {
+  opacity: 0.2;
+}
+
 @keyframes nome1-keyframes {
   /* line 2, ../sass/modules/_components.scss */
   0% {
@@ -355,7 +429,7 @@ section#about figure img {
 @media (min-width: 768px) {
   /* line 179, ../sass/modules/_sections.scss */
   section#about {
-    height: 41.25em;
+    height: 44.25em;
   }
   /* line 219, ../sass/modules/_sections.scss */
   section#about .base {
@@ -607,7 +681,7 @@ section#portfolio {
 /* line 447, ../sass/modules/_sections.scss */
 section#portfolio h1.title {
   color: #cbc373;
-  margin-bottom: 1.3em;
+  margin-bottom: 0.8em;
 }
 /* line 451, ../sass/modules/_sections.scss */
 section#portfolio .p_box {
@@ -620,11 +694,6 @@ section#portfolio .p_box {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -ms-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
 }
 /* line 456, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_img {
@@ -646,11 +715,20 @@ section#portfolio .p_box .p_img {
   -o-transition: all 1.5s ease 0s;
   transition: all 1.5s ease 0s;
 }
-/* line 469, ../sass/modules/_sections.scss */
-section#portfolio .p_box .p_img:hover figure {
+/* line 471, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_img:hover figure, section#portfolio .p_box .p_img:focus figure {
   background-size: 120%;
 }
-/* line 472, ../sass/modules/_sections.scss */
+/* line 474, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_img:hover a.btn-open, section#portfolio .p_box .p_img:focus a.btn-open {
+  opacity: .8;
+  -webkit-transition: all 1.5s ease 0s;
+  -moz-transition: all 1.5s ease 0s;
+  -ms-transition: all 1.5s ease 0s;
+  -o-transition: all 1.5s ease 0s;
+  transition: all 1.5s ease 0s;
+}
+/* line 479, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_img figure {
   width: 100%;
   height: 100%;
@@ -667,7 +745,7 @@ section#portfolio .p_box .p_img figure {
   transition: all 0.5s ease-in-out 0s;
   margin: 0 auto;
 }
-/* line 486, ../sass/modules/_sections.scss */
+/* line 493, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc {
   position: relative;
   left: 50%;
@@ -689,7 +767,7 @@ section#portfolio .p_box .p_desc {
   transition: all 1s ease 0s;
   box-shadow: 0px 0px 7px black;
 }
-/* line 497, ../sass/modules/_sections.scss */
+/* line 504, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc h1 {
   background-color: #142914;
   color: transparent;
@@ -700,11 +778,11 @@ section#portfolio .p_box .p_desc h1 {
   border-bottom: 1px solid #9e965b;
   border-bottom: 1px solid #9e965b;
 }
-/* line 508, ../sass/modules/_sections.scss */
+/* line 515, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc h3 {
   margin-top: 0px;
 }
-/* line 514, ../sass/modules/_sections.scss */
+/* line 521, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-base {
   padding: 4%;
   -webkit-transition: all 0.5s ease-in-out 0s;
@@ -714,7 +792,7 @@ section#portfolio .p_box .p_desc .desc-base {
   transition: all 0.5s ease-in-out 0s;
   z-index: 4;
 }
-/* line 519, ../sass/modules/_sections.scss */
+/* line 526, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click {
   padding-top: 4%;
   -webkit-transition: all 0.5s ease-in-out 0s;
@@ -724,25 +802,61 @@ section#portfolio .p_box .p_desc .desc-click {
   transition: all 0.5s ease-in-out 0s;
   z-index: 5;
 }
-/* line 523, ../sass/modules/_sections.scss */
+/* line 530, ../sass/modules/_sections.scss */
 section#portfolio .p_box .p_desc .desc-click h1 {
   display: none;
 }
-/* line 526, ../sass/modules/_sections.scss */
-section#portfolio .p_box .p_desc .desc-click ul {
+/* line 533, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click ul.detalhes {
+  list-style: none;
+  padding: 0 15px;
+  margin-bottom: 1em;
+}
+/* line 538, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click ul.gallery {
   list-style: none;
   margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0;
 }
-/* line 529, ../sass/modules/_sections.scss */
-section#portfolio .p_box .p_desc .desc-click ul li {
+/* line 543, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click ul.gallery li {
   margin-bottom: 15px;
 }
+/* line 545, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click ul.gallery li img {
+  background-color: transparent;
+  border: none;
+}
+/* line 551, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click .tags {
+  margin-bottom: 2em;
+}
+/* line 553, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click .tags ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+}
+/* line 557, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click .tags ul li {
+  float: left;
+  margin: 1em 1em 1em 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #142914;
+  color: #cbc373;
+}
+/* line 564, ../sass/modules/_sections.scss */
+section#portfolio .p_box .p_desc .desc-click .tags ul li p {
+  margin: 0;
+}
 @media (min-width: 768px) {
-  /* line 537, ../sass/modules/_sections.scss */
+  /* line 576, ../sass/modules/_sections.scss */
   section#portfolio h1.title {
     font-size: 4em;
   }
-  /* line 540, ../sass/modules/_sections.scss */
+  /* line 579, ../sass/modules/_sections.scss */
   section#portfolio .p_box {
     /*width: 34.375em;*/
     max-height: 9.375em;
@@ -755,17 +869,12 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-transition: all 1s ease 0s;
-    -moz-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
   }
-  /* line 547, ../sass/modules/_sections.scss */
+  /* line 586, ../sass/modules/_sections.scss */
   section#portfolio .p_box.active {
-    max-height: 40em;
+    max-height: 100em;
   }
-  /* line 550, ../sass/modules/_sections.scss */
+  /* line 589, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img {
     height: 9.375em;
     width: 9.375em;
@@ -783,7 +892,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
   }
-  /* line 562, ../sass/modules/_sections.scss */
+  /* line 601, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img.click {
     left: calc(100% / 2);
     margin-left: -3.125em;
@@ -791,15 +900,21 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     height: 6.25em;
     margin-top: -1em;
   }
-  /* line 568, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_img.click a {
-    top: 0;
+  /* line 607, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img.click a.btn-open {
+    opacity: 0;
   }
-  /* line 573, ../sass/modules/_sections.scss */
+  /* line 610, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img.click a.btn-close {
+    top: 0;
+    z-index: 10;
+  }
+  /* line 616, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_img figure {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    position: absolute;
     box-shadow: inset 0 0 10px 1px #10160f;
     z-index: 2;
     -webkit-transition: all 0.5s ease-in-out 0s;
@@ -808,8 +923,29 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
   }
-  /* line 582, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_img a {
+  /* line 625, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img .btn-open {
+    display: block;
+    position: absolute;
+    width: 9.375em;
+    height: 9.375em;
+    line-height: 9.375em;
+    background: #CBC373;
+    z-index: 9;
+    opacity: 0;
+    -webkit-transition: all 1.5s ease 0s;
+    -moz-transition: all 1.5s ease 0s;
+    -ms-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s;
+  }
+  /* line 635, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img .btn-open i {
+    font-size: 2em;
+    color: #142914;
+  }
+  /* line 640, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img a.btn-close {
     display: block;
     position: absolute;
     width: 5.625em;
@@ -823,22 +959,22 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     transition: all 0.5s ease-in-out 0s;
     top: 10em;
   }
-  /* line 591, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_img a i {
+  /* line 649, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img a.btn-close i {
     line-height: 90px;
     font-size: 2em;
     color: #142914;
     opacity: .7;
   }
-  /* line 597, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_img a:hover {
+  /* line 656, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img a.btn-close:hover, section#portfolio .p_box .p_img a.btn-close:focus {
     background-color: rgba(203, 195, 115, 0.8);
   }
-  /* line 600, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_img a:hover i {
+  /* line 660, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_img a.btn-close:hover, section#portfolio .p_box .p_img a.btn-close:focus i {
     opacity: 1;
   }
-  /* line 605, ../sass/modules/_sections.scss */
+  /* line 665, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc {
     /*width: 400px;*/
     position: relative;
@@ -864,41 +1000,63 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
   }
-  /* line 619, ../sass/modules/_sections.scss */
+  /* line 679, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.active {
-    max-height: 40em;
+    max-height: 100em;
   }
-  /* line 622, ../sass/modules/_sections.scss */
+  /* line 682, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc h1 {
     border-bottom: 1px solid #9e965b;
   }
-  /* line 625, ../sass/modules/_sections.scss */
+  /* line 685, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc h3 {
-    margin-top: 0px;
+    margin-top: 10px;
   }
-  /* line 628, ../sass/modules/_sections.scss */
-  section#portfolio .p_box .p_desc a {
+  /* line 688, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_desc .content-btn {
+    background-color: #142914;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -26px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    transform: rotate(45deg);
+  }
+  /* line 698, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_desc .content-btn a.btn-open {
     text-decoration: none;
-    color: #142914;
+    color: #cbc373;
     font-size: 1.5em;
     font-weight: bold;
+    position: absolute;
+    left: 5px;
+    top: -2px;
   }
-  /* line 634, ../sass/modules/_sections.scss */
+  /* line 707, ../sass/modules/_sections.scss */
+  section#portfolio .p_box .p_desc .content-btn a.btn-open:hover, section#portfolio .p_box .p_desc .content-btn a.btn-open:focus {
+    color: #9e965b;
+  }
+  /* line 712, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-base {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 1;
     padding: 0;
-    padding-left: 85px;
+    /*padding-left: 85px;*/
     -webkit-transition: all 0.5s ease-in-out 0.1s;
     -moz-transition: all 0.5s ease-in-out 0.1s;
     -ms-transition: all 0.5s ease-in-out 0.1s;
     -o-transition: all 0.5s ease-in-out 0.1s;
     transition: all 0.5s ease-in-out 0.1s;
     z-index: 4;
+    width: 100%;
+    height: 100%;
+    /* btn-open*/
   }
-  /* line 644, ../sass/modules/_sections.scss */
+  /* line 724, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-click {
     position: relative;
     margin-top: 4.375em;
@@ -911,14 +1069,13 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     transition: all 0.5s ease-in-out 0s;
     z-index: 5;
   }
-  /* line 653, ../sass/modules/_sections.scss */
+  /* line 732, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc .desc-click h1,
-  section#portfolio .p_box .p_desc .desc-click h4,
-  section#portfolio .p_box .p_desc .desc-click div {
+  section#portfolio .p_box .p_desc .desc-click h4 {
     display: block;
     margin-bottom: 1em;
   }
-  /* line 658, ../sass/modules/_sections.scss */
+  /* line 738, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.click .desc-base {
     opacity: 0;
     left: 50%;
@@ -928,7 +1085,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
   }
-  /* line 664, ../sass/modules/_sections.scss */
+  /* line 744, ../sass/modules/_sections.scss */
   section#portfolio .p_box .p_desc.click .desc-click {
     opacity: 1;
     margin-top: 0;
@@ -943,7 +1100,7 @@ section#portfolio .p_box .p_desc .desc-click ul li {
 /***************************************************************************************************/
 /***************************************************************************************************/
 /***************************************************************************************************/
-/* line 679, ../sass/modules/_sections.scss */
+/* line 759, ../sass/modules/_sections.scss */
 section#contactos {
   background-color: #cbc373;
   color: #142914;
@@ -952,7 +1109,7 @@ section#contactos {
   padding-bottom: 4em;
   z-index: 16;
 }
-/* line 686, ../sass/modules/_sections.scss */
+/* line 766, ../sass/modules/_sections.scss */
 section#contactos .map-contacts {
   width: 110%;
   height: 18.75em;
@@ -963,7 +1120,7 @@ section#contactos .map-contacts {
   margin-left: -5%;
   margin-top: -1px;
 }
-/* line 696, ../sass/modules/_sections.scss */
+/* line 776, ../sass/modules/_sections.scss */
 section#contactos .icon-contact {
   width: 6em;
   height: 6em;
@@ -975,7 +1132,7 @@ section#contactos .icon-contact {
   background-color: #142914;
   box-shadow: 0px 0px 5px #000;
 }
-/* line 706, ../sass/modules/_sections.scss */
+/* line 786, ../sass/modules/_sections.scss */
 section#contactos .icon-contact .__icon {
   display: flex;
   justify-content: center;
@@ -984,16 +1141,16 @@ section#contactos .icon-contact .__icon {
   font-size: 2em;
   color: #cbc373;
 }
-/* line 715, ../sass/modules/_sections.scss */
+/* line 795, ../sass/modules/_sections.scss */
 section#contactos .box-contacts {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* line 718, ../sass/modules/_sections.scss */
+/* line 798, ../sass/modules/_sections.scss */
 section#contactos .box-contacts h1 {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
-/* line 721, ../sass/modules/_sections.scss */
+/* line 801, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .line {
   width: 80%;
   height: 1px;
@@ -1002,15 +1159,15 @@ section#contactos .box-contacts .line {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 729, ../sass/modules/_sections.scss */
+/* line 809, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts {
   padding-top: 1em;
 }
-/* line 731, ../sass/modules/_sections.scss */
+/* line 811, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 {
   line-height: 50px;
 }
-/* line 733, ../sass/modules/_sections.scss */
+/* line 813, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 i {
   display: flex;
   justify-content: center;
@@ -1023,16 +1180,16 @@ section#contactos .box-contacts .group-contacts h4 i {
   background-color: #142914;
   float: left;
 }
-/* line 745, ../sass/modules/_sections.scss */
+/* line 825, ../sass/modules/_sections.scss */
 section#contactos .box-contacts .group-contacts h4 a {
   color: #142914;
 }
-/* line 747, ../sass/modules/_sections.scss */
-section#contactos .box-contacts .group-contacts h4 a:hover {
+/* line 828, ../sass/modules/_sections.scss */
+section#contactos .box-contacts .group-contacts h4 a:hover, section#contactos .box-contacts .group-contacts h4 a:focus {
   color: #10160f;
 }
 @media (min-width: 768px) {
-  /* line 755, ../sass/modules/_sections.scss */
+  /* line 836, ../sass/modules/_sections.scss */
   section#contactos .group-contacts {
     width: 21em;
     position: relative;
@@ -1074,6 +1231,134 @@ section#contactos .box-contacts .group-contacts h4 a:hover {
 @font-face {
   font-family: sergiofont;
   src: url(../font/sergiofont/mesmerize-el.ttf);
+}
+
+/* line 1, ../sass/modules/_checkbox.scss */
+#portfolio input[type=radio] {
+  display: none;
+}
+
+/* line 4, ../sass/modules/_checkbox.scss */
+.list-type {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 3em;
+}
+/* line 7, ../sass/modules/_checkbox.scss */
+.list-type ._btn {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 7, ../sass/modules/_checkbox.scss */
+  .list-type ._btn {
+    width: auto;
+    text-align: justify;
+  }
+}
+
+/* line 18, ../sass/modules/_checkbox.scss */
+label.btn span {
+  font-size: 1.5em;
+  color: #cbc373;
+}
+
+/* line 23, ../sass/modules/_checkbox.scss */
+label input[type="radio"] ~ i.fa.fa-circle-o {
+  color: #9e965b;
+  display: inline;
+}
+
+/* line 26, ../sass/modules/_checkbox.scss */
+label input[type="radio"] ~ i.fa.fa-check-circle-o {
+  display: none;
+}
+
+/* line 29, ../sass/modules/_checkbox.scss */
+label input[type="radio"]:checked ~ i.fa.fa-circle-o {
+  display: none;
+}
+
+/* line 32, ../sass/modules/_checkbox.scss */
+label input[type="radio"]:checked ~ i.fa.fa-check-circle-o {
+  color: #cbc373;
+  display: inline;
+}
+
+/* line 35, ../sass/modules/_checkbox.scss */
+label:hover input[type="radio"] ~ i.fa {
+  color: #cbc373;
+}
+
+/* line 39, ../sass/modules/_checkbox.scss */
+label input[type="checkbox"] ~ i.fa.fa-square-o {
+  color: #cbc373;
+  display: inline;
+}
+
+/* line 42, ../sass/modules/_checkbox.scss */
+label input[type="checkbox"] ~ i.fa.fa-check-square-o {
+  display: none;
+}
+
+/* line 45, ../sass/modules/_checkbox.scss */
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
+  display: none;
+}
+
+/* line 48, ../sass/modules/_checkbox.scss */
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
+  color: #cbc373;
+  display: inline;
+}
+
+/* line 51, ../sass/modules/_checkbox.scss */
+label:hover input[type="checkbox"] ~ i.fa {
+  color: #cbc373;
+}
+
+/* line 55, ../sass/modules/_checkbox.scss */
+div[data-toggle="list-type"] label.active {
+  color: #cbc373;
+}
+
+/* line 59, ../sass/modules/_checkbox.scss */
+div[data-toggle="list-type"] label {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: none;
+  border: 0px solid #9e965b;
+  border-radius: 3px;
+  color: #cbc373;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 81, ../sass/modules/_checkbox.scss */
+div[data-toggle="list-type"] label:hover {
+  color: #cbc373;
+}
+
+/* line 85, ../sass/modules/_checkbox.scss */
+div[data-toggle="list-type"] label:active, div[data-toggle="list-type"] label.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /* line 1, ../sass/modules/_buttons.scss */

@@ -1,0 +1,148 @@
+[
+	{
+		"type":"web design",
+		"title":"Ferdimar",
+		"foto":"url(img/portfolio/ferdimar/b1.jpg)",
+		"detalhes": [
+			{"titulo":"Name Company","desc":"FERDIMAR Diamond Tools, Lda"},
+			{"titulo":"Web Site","desc":"www.ferdimar.com"},
+			{"titulo":"Year","desc":"2014"}
+		],
+		"descricao":"Read more about this project.",
+		"readmore":"Ferdimar is an international company, construction market leader in diamond tools for marble cutting. This company has already a lot of awards. ",
+		
+		"link":"ferdimar",
+		"images": [
+			{
+		      "url":"img/portfolio/ferdimar/g1.jpg",
+		      "thumbUrl":"img/portfolio/ferdimar/thumb/g1.jpg" 
+		    },
+		    {
+		      "url":"img/portfolio/ferdimar/g2.jpg",
+		      "thumbUrl":"img/portfolio/ferdimar/thumb/g2.jpg" 
+		    },
+		    {
+		      "url":"img/portfolio/ferdimar/g3.jpg",
+		      "thumbUrl":"img/portfolio/ferdimar/thumb/g3.jpg" 
+		    },
+		    {
+		      "url":"img/portfolio/ferdimar/g4.jpg",
+		      "thumbUrl":"img/portfolio/ferdimar/thumb/g4.jpg" 
+		    }
+		],
+		"tags": [
+			{"titulo": "HTML5"},
+			{"titulo": "CSS3"},
+			{"titulo": "JavaScript"},
+			{"titulo": "jQuery"},
+			{"titulo": "PHP"}
+		]
+	},
+	{
+		"type":"motion",
+		"title":"Soraia's Portfolio",
+		"foto":"url(img/portfolio/motion_graphics/b1.jpg)",
+		"detalhes": [
+			{"titulo":"Name","desc":"Soraia Malaquias"},
+			{"titulo":"Profession", "desc":"Designer"}
+		],
+		"descricao":"Read more about this project.",
+		"readmore":"Soraia is a designer with a college degree in general design from IADE - Creative university - Lisbon, and an animator with an one year conservatory in New York Film Academy - Los Angeles, she loves animation and her best quality is to be an hard worker. ",
+		"link":"motion_graphics",
+		"video": "img/portfolio/motion_graphics/after.mp4"
+	},
+	{
+		"type":"web design",
+		"title":"Minorsa",
+		"foto":"url(img/portfolio/minorsa/b1.jpg)",
+		"detalhes": [
+			{"titulo":"Name Company","desc":"MINORSA - Advance Stone Machines"},
+			{"titulo":"Web Site","desc":"www.minorsa.com"},
+			{"titulo":"Year","desc":"2015"}
+		],
+		"descricao":"Read more about this project.",
+		"readmore":"Minorsa is a international company for industrial machines contruction and remodelation. This machines are for stone cutting.",
+		
+		"link":"minorsa",
+		"images": [
+			{
+		      "url":"img/portfolio/minorsa/g1.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g1.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/minorsa/g2.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g2.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/minorsa/g3.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g3.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/minorsa/g4.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g4.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/minorsa/g5.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g5.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/minorsa/g6.jpg",
+		      "thumbUrl":"img/portfolio/minorsa/thumb/g6.jpg"
+		    }
+		],
+		"tags": [
+			{"titulo": "HTML5"},
+			{"titulo": "CSS3"},
+			{"titulo": "Bootstrap"},
+			{"titulo": "JavaScript"},
+			{"titulo": "jQuery"},
+			{"titulo": "PHP"}
+		]
+	},
+	{
+		"type":"motion",
+		"title":"under construction",
+		"foto":"url(img/portfolio/motion_graphics/underconstruction.png)",
+		"descricao":"Read more about this project.",
+		"readmore":"",
+		"link":"motion_graphics",
+		"video": "img/portfolio/motion_graphics/underconstruction.mp4"
+	},
+	{
+		"type":"web design",
+		"title": "Di-Stone",
+		"foto": "url(img/portfolio/di-stone/b1.jpg)",
+		"detalhes": [
+			{"titulo":"Name Company","desc":"Di-STONE - Markting of Stone"},
+			{"titulo":"Web Site","desc":"www.di-stone.com (off-line)"},
+			{"titulo":"Year","desc":"2015"}
+		],
+		"descricao": "Read more about this project.",
+		"readmore": "Di-stone is a company for stone commercialization. It was recently founded and this company is now aquire for her space in the international market.",
+		
+		"link": "di-stone",
+		"images": [
+			{
+		      "url":"img/portfolio/di-stone/g1.jpg",
+		      "thumbUrl":"img/portfolio/di-stone/thumb/g1.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/di-stone/g2.jpg",
+		      "thumbUrl":"img/portfolio/di-stone/thumb/g2.jpg"
+		    },
+		    {
+		      "url":"img/portfolio/di-stone/g3.jpg",
+		      "thumbUrl":"img/portfolio/di-stone/thumb/g3.jpg"
+		    }
+		],
+		"tags": [
+			{"titulo": "HTML5"},
+			{"titulo": "CSS3"},
+			{"titulo": "JavaScript"},
+			{"titulo": "jQuery"},
+			{"titulo": "PHP"}
+		]
+	}
+	
+
+]
