@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sergioPortfolioApp">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio | Sérgio António - Front End Developer</title>
@@ -57,8 +57,7 @@
 
     </script>
 </head>
-<body ng-app="sergioPortfolioApp">
-    <!--<img src="img/content.png" style="display:none;" alt="Sergio Antonio Front End">-->
+<body >
     <div id="menu-mobile-all">
         <div class="hamburger">
             <div id="icon-mobile" >
@@ -75,7 +74,6 @@
                 <a class="" href="#portfolio"><span>Portfolio</span></a>
                 <a class="" href="#contactos"><span>Contacts</span></a>
             </nav>
-            <a href="#home" id="logo"></a>
         </header>
     </div>
     <div id="menu-tablet-all">
@@ -131,7 +129,7 @@
                     </div>
                 </div>
                 <figure class="col-xs-12 col-sm-5 col-sm-pull-7">
-                    <img ng-src="{{src}}" alt="{{title}}">
+                    <img src="{{src}}" alt="{{title}}">
                 </figure>
             </div>
         </div>
