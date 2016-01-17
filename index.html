@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sergio Antonio</title>
+    <title>Portfolio | Sérgio António - Front End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="thema-color" content="#142914">
-    <meta name="description" content="My name is Sérgio António and i am a front end developer. I am professional and hardworker, I am always updated to the most development techniques.">
+    
+    <!-- SEO -->
+        <meta name="description" content="My name is Sérgio António and i am a front end developer. I am professional and hardworker, i am always updated to the most development techniques.">
+        <link rel="canonical" href="http://sergiofrontend.github.io/">
+        <meta property="og:locale" content="en_EN">
+        <meta property="og:type" content="page">
+        <meta property="og:title" content="Portfolio | Sérgio António - Front End Developer">
+        <meta property="og:description" content="My name is Sérgio António and i am a front end developer. I am professional and hardworker, i am always updated to the most development techniques.">
+        <meta property="og:url" content="http://sergiofrontend.github.io/">
+        <meta property="og:site_name" content="Sérgio António">
+        <meta property="og:image" content="http://sergiofrontend.github.io/img/content.png">
+    <!-- / SEO  -->
+
+    <!-- Facebook Like Thumbnail -->
+        <link rel="image_src" href="http://sergiofrontend.github.io/img/content.png">
+    <!-- End Facebook Like-->
+
+    <!-- Personalizar Lollipop -->
+        <meta name="theme-color" content="#142914">
+        <link rel="icon" sizes="192x192" href="img/icon.png">
+    <!-- End Personalizar Lollipop -->
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.css">
@@ -36,7 +56,7 @@
     </script>
 </head>
 <body ng-app="sergioPortfolioApp">
-    <img src="img/logo-1.png" style="display:none;" alt="Sergio Antonio Front End">
+    <!--<img src="img/content.png" style="display:none;" alt="Sergio Antonio Front End">-->
     <div id="menu-mobile-all">
         <div class="hamburger">
             <div id="icon-mobile" >
@@ -85,11 +105,12 @@
         </div>
         <!--<a href="#about" class="btn-scroll"></a>
         <div class="linehome"></div>-->
-        <a class="btn-scroll1" href="#about">
+        <a class="btn-scroll" href="#about">
             <span></span>
             <span></span>
             <span></span>
         </a>
+
     </section>
     <section id="about" ng-controller="aboutCtrl">
         <div class="container">
