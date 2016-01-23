@@ -1,5 +1,5 @@
 app.constant("config", {
-	baseUrl: "http://localhost:3000/my_web/",
+	baseUrl: "http://sergiofrontend.github.io/",
 	facebook: {
 		"icon": "fa fa-facebook", 
 		"link": "https://www.facebook.com/sergio.antonio.503"
