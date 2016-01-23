@@ -9,13 +9,13 @@ app.provider("worksAPI", function(){
 	};
 });
 
+
+
 /*app.service("worksAPI", function ($http) {
 	this.getWorks = function () {
 		return $http.get("js/portfolio.json");
 	};
 });
-
-
 app.factory("worksAPI", function ($http) {
 	var _getWorks = function () {
 		return $http.get("js/portfolio.json");

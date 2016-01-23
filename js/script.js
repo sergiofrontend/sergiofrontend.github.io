@@ -33,7 +33,7 @@
 
 
   //Ativa o botao do menu relativamente ao scroll
-/*  $(function() {
+  $(function() {
 
       var links = $("#myNavbar a, #myNavbar-mobile a");
       $(window).scroll(function() {
@@ -55,7 +55,7 @@
         })
 
       })
-    });*/
+    });
 
 
 })(jQuery);

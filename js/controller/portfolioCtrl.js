@@ -1,4 +1,4 @@
-app.controller('portfolioCtrl', function($scope, $http, $timeout, Lightbox, worksAPI){
+app.controller('portfolioCtrl', function($scope, $http, $timeout, Lightbox, worksAPI, animateElementAPI){
 
   $scope.findWork = "";/*input radio select checked*/
 	$scope.works = [];
@@ -8,6 +8,8 @@ app.controller('portfolioCtrl', function($scope, $http, $timeout, Lightbox, work
 			$scope.works = data;
 		});
 	};
+
+  carregarPortfolio();
 
   $scope.openLightboxModal = function (index) {
   	console.log(index);
@@ -33,8 +35,10 @@ app.controller('portfolioCtrl', function($scope, $http, $timeout, Lightbox, work
   		Lightbox.openModal(work.images, index);
 	};
 
+
+  $scope.animateElementInZOOM = animateElementAPI.animateElementInZOOM;
+  $scope.animateElementOutZOOM = animateElementAPI.animateElementOutZOOM;
   
-  carregarPortfolio();
 
 
 });

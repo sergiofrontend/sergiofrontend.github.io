@@ -1,4 +1,4 @@
-app.controller('contactCtrl', function($scope, config) {
+app.controller('contactCtrl', function($scope, config, animateElementAPI) {
 	
 	$scope.facebook = {"icon":"","src": ""};
 	$scope.facebook.icon = config.facebook.icon;
@@ -8,5 +8,6 @@ app.controller('contactCtrl', function($scope, config) {
 	$scope.linkedin.icon = config.linkedin.icon;
 	$scope.linkedin.src = config.linkedin.link;
 		
-
+	$scope.animateElementInTADA = animateElementAPI.animateElementInTADA;
+	$scope.animateElementOutTADA = animateElementAPI.animateElementOutTADA;
 });

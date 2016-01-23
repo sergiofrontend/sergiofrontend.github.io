@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div 
+        	class="base col-xs-12 col-sm-7 col-sm-push-5 animate-hidden" 
+    		when-visible="animateElementInRIGHT"
+			when-not-visible="animateElementOutRIGHT">
+            <h1 class=" col-sm-12">{{title}}</h1>
+            <div class="dados col-sm-12 col-md-8 col-md-offset-2">
+                <div class="col-xs-12">
+                    <h3 class="col-xs-12"><i class="fa fa-user fa-lg"></i>{{pessoa.descname}}</h3>
+                    <p class="col-xs-12">{{pessoa.name}}</p>
+                    <h3 class="col-xs-12"><i class="fa fa-birthday-cake fa-lg"></i>{{pessoa.descage}}</h3>
+                    <p class="col-xs-12">{{pessoa.age}}</p>
+                    <h3 class="col-xs-12"><i class="fa fa-globe fa-lg"></i>{{pessoa.desccontry}}</h3>
+                    <p class="col-xs-12">{{pessoa.contry}}</p>
+                </div>
+            </div>
+        </div>
+        <figure 
+        	class="col-xs-12 col-sm-5 col-sm-pull-7 animate-hidden" 
+    		when-visible="animateElementInLEFT"
+				when-not-visible="animateElementOutLEFT">
+            	<img src="{{src}}" alt="{{title}}">
+        </figure>
+    </div>
+</div>

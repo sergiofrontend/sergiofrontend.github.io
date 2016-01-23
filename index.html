@@ -34,28 +34,6 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <link href="css/lib/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controller/aboutCtrl.js"></script>
-    <script src="js/controller/skillCtrl.js"></script>
-    <script src="js/controller/portfolioCtrl.js"></script>
-    <script src="js/controller/contactCtrl.js"></script>
-    <script src="js/directive/myPostRepeatDirective.js"></script>
-    <script src="js/services/worksAPIService.js"></script>
-    <script src="js/value/configValue.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-72538407-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
 </head>
 <body >
     <div id="menu-mobile-all">
@@ -103,65 +81,24 @@
             <div id="name2"></div>
             <div id="name3"></div>
         </div>
-        <!--<a href="#about" class="btn-scroll"></a>
-        <div class="linehome"></div>-->
         <a class="btn-scroll" href="#about">
             <span></span>
             <span></span>
             <span></span>
         </a>
+    </section>
+    <section id="about" ng-controller="aboutCtrl" ng-include="'views/about.html'">
 
     </section>
-    <section id="about" ng-controller="aboutCtrl">
-        <div class="container">
-            <div class="row">
-                <div class="base col-xs-12 col-sm-7 col-sm-push-5">
-                    <h1 class=" col-sm-12">{{title}}</h1>
-                    <div class="dados col-sm-12 col-md-8 col-md-offset-2">
-                        <div class="col-xs-12">
-                            <h3 class="col-xs-12"><i class="fa fa-user fa-lg"></i>{{pessoa.descname}}</h3>
-                            <p class="col-xs-12">{{pessoa.name}}</p>
-                            <h3 class="col-xs-12"><i class="fa fa-birthday-cake fa-lg"></i>{{pessoa.descage}}</h3>
-                            <p class="col-xs-12">{{pessoa.age}}</p>
-                            <h3 class="col-xs-12"><i class="fa fa-globe fa-lg"></i>{{pessoa.desccontry}}</h3>
-                            <p class="col-xs-12">{{pessoa.contry}}</p>
-                        </div>
-                    </div>
-                </div>
-                <figure class="col-xs-12 col-sm-5 col-sm-pull-7">
-                    <img src="{{src}}" alt="{{title}}">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section id="school">
-        <div class="conainer">
-            <div class="row">
-                <div class="school text-center">
-                    <span class="col-xs-12">Professional course in</span>
-                    <span class="col-xs-12">IT & Manegement</span>
-                    <span class="col-xs-12">adobe programes & programming</span>
-                    <span class="col-xs-12">languages. <span class="__v1">(2001-2004)</span> & Professional</span>
-                    <span class="col-xs-12">course in  <span class="__v1">3ds Max</span> (2014)</span>
-                </div>
-            </div>
-        </div>
+    <section id="school" ng-controller="schoolCtrl" ng-include="'views/school.html'">
+        
     </section>
 
     <section id="skills" ng-controller="skillsCtrl" ng-include="'views/skills.html'">
 <!-- SKILLS -->
     </section>
-    <section id="frase">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <blockquote>
-                        <h2><i>"The only place success comes before work is in the dictionary"</i></h2>
-                        <small>by <cite>Vince Lombardi</cite></small>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
+    <section id="frase" ng-controller="fraseCtrl" ng-include="'views/frase.html'">
+        
     </section>
     <section id="portfolio" ng-include="'views/portfolio.html'" ng-controller="portfolioCtrl">
 <!-- PORTFOLIO -->
@@ -180,25 +117,36 @@
             </div>
         </div>
     </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/aboutCtrl.js"></script>
+    <script src="js/controller/schoolCtrl.js"></script>
+    <script src="js/controller/skillCtrl.js"></script>
+    <script src="js/controller/fraseCtrl.js"></script>
+    <script src="js/controller/portfolioCtrl.js"></script>
+    <script src="js/controller/contactCtrl.js"></script>
+    <script src="js/directive/myPostRepeatDirective.js"></script>
+    <script src="js/services/worksAPIService.js"></script>
+    <script src="js/services/animateAPIService.js"></script>
+    <script src="js/value/configValue.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-72538407-1', 'auto');
+      ga('send', 'pageview');
 
-
-
-
-
+    </script>
     <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/angular-animate/angular-animate.min.js"></script>
     <script src="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.js"></script>
+    <script src="lib/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
     <script src="lib/wow/dist/wow.min.js"></script>
     <script src="lib/isinviewport/isInViewport.min.js"></script>    
-    <script src="js/script.js"></script>
-
-
-
-    <script>
-
-    </script>
-              
+    <script src="js/script.js"></script>              
 </body>
 </html>

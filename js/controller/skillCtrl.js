@@ -1,4 +1,4 @@
-app.controller('skillsCtrl', function($scope){
+app.controller('skillsCtrl', function($scope, animateElementAPI){
 
 	$scope.titleHard = "Hard Skills";
 	$scope.titleSoft = "Soft Skills";
@@ -22,4 +22,12 @@ app.controller('skillsCtrl', function($scope){
 				{name: "PHP"},
 				{name: "Git"}
 			];
+
+
+	$scope.animateElementInUP = animateElementAPI.animateElementInUP;
+	$scope.animateElementOutUP = animateElementAPI.animateElementOutUP;
+	$scope.animateElementInLEFT = animateElementAPI.animateElementInLEFT;
+	$scope.animateElementOutLEFT = animateElementAPI.animateElementOutLEFT;
+	$scope.animateElementInRIGHT = animateElementAPI.animateElementInRIGHT;
+	$scope.animateElementOutRIGHT = animateElementAPI.animateElementOutRIGHT;
 });
